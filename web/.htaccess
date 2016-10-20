@@ -1,0 +1,13 @@
+#php_value date.timezone 'Asia/Novosibirsk'
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^tourbook.biz [OR]
+RewriteCond %{HTTP_HOST} ^tourbook.biz [OR]
+RewriteCond %{HTTP_HOST} ^tourbook.biz
+RewriteRule (.*) https://www.tourbook.biz/$1 [R=301,L]
+
+# If a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Otherwise forward it to index.php
+RewriteRule . index.php
