@@ -52,7 +52,7 @@ AppAsset::register($this);
                 ['label' => 'My Account', 'url' => ['/management']]
                 ) : (
                 ['label' => '', 'url' => ['/management']]),
-                Yii::$app->user->isGuest ? (['label' => '<span>Login</span>', 'url' => ['/site/login']]) : (
+                Yii::$app->user->isGuest ? (['label' => 'Login', 'url' => ['/site/login']]) : (
                     '<li>'
                     . Html::beginForm(['/site/logout'], 'post', ['class' => 'navbar-form'])
                     . Html::submitButton(
@@ -69,6 +69,7 @@ AppAsset::register($this);
         <?php
         NavBar::end();
         ?>
+        <!--Пока скрыл потом норм натяну -->
         <div class="row hidden">
             <div class="col-xs-8 block ">
                 <div class="col-xs-6 group">

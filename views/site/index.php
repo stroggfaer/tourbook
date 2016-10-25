@@ -19,7 +19,7 @@ $this->title = 'TourBook.Net';
         </form>
         <div class="slider">
             <div class="items">
-                <div class="item"><img src="files/slider/slider1.png" alt="" class="rad" /> </div>
+                <div class="item"><img src="/files/slider/slider1.png" alt="" class="rad" /> </div>
             </div>
         </div>
     </div>
